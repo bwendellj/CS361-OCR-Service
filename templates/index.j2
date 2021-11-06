@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image for OCR</title>
+</head>
+<body>
+    {% if upload_confirmed %}
+    <h1 style="color:green"> {{ upload_confirmed }} </h1>
+    {% endif %}
+    <br>
+    <h1> Upload Image File - jpg, jpeg, or png </h1>
+
+    <form method=POST enctype=multipart/form-data>
+        <input type="file" name=file>
+        <input type="submit" name=Upload value="Upload Image">
+    </form>
+</body>
+</html>
